@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from data import load_data, CodeDataset, tokenizer
-from model import Transformer
+from transformer.py import Transformer
 from utils import create_masks
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
